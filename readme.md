@@ -77,7 +77,7 @@ node_modules/
                 COPY . .
 
 ```
-- example https://hub.docker.com/_/node <!--- check the current node version -->
+- example [check image avilabel](https://hub.docker.com/_/node) <!--- check the current node version -->
 
 - in the copy . . 
 ```bash 
@@ -95,6 +95,13 @@ node_modules/
 ```
 - after push the code it install the dependecies which are write in <sttong>package.json</strong>
 
+## run multiple command .
+
+```bash
+
+   RUN apk add --no-cache npm \&& npm install \&& npm install -D nodemon
+
+```
 
 
 ### to start the development/production server after install the node_modules in image with the use of `CMD` and `ENTRYPOINT`
@@ -136,11 +143,28 @@ once your application has been built successfully using CMD directive of Dockerf
 ```
 - -t stand for tag image tag
 - example docker build -t myapp . 
-<!-- . because it in current file -->
+- . because it in current file 
 
 * Check the docker image with desktop
   -----------------------------------
 
 ![image](https://github.com/Krishna-sm/docker-simple-node-js/assets/105251808/cbb07fde-440f-4cfc-8e18-3d1409067181)
 
+
+## To check docker images with command line 
+```bash
+      docker images  # simple command
+      docker image ls # for listing
+
+```
+
+
+# create a docker container
+- the container is used to run the docker image 
+* it first load the image in conatainer and then it runs
+
+```bash
+
+                docker container run < app_name >
+```
 
