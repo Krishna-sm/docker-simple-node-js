@@ -80,7 +80,7 @@ node_modules/
 - example https://hub.docker.com/_/node <!--- check the current node version -->
 
 - in the copy . . 
-- ```bash 
+```bash 
 {
         - Copy is used to copy the data in the container image 
         - first . is represent the currenty dir source 
@@ -137,3 +137,10 @@ once your application has been built successfully using CMD directive of Dockerf
 - -t stand for tag image tag
 - example docker build -t myapp . 
 <!-- . because it in current file -->
+
+* Check the docker image with desktop
+  -----------------------------------
+
+![image](https://github.com/Krishna-sm/docker-simple-node-js/assets/105251808/cbb07fde-440f-4cfc-8e18-3d1409067181)
+
+
